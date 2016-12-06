@@ -1,0 +1,111 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Roy Gustafson">
+    <title>Bone Apple Tea</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sahitya" rel="stylesheet">
+  </head>
+  <body>
+    <header class="fixed">
+      <div class="container">
+        <a href="./home.html"><img id="logo" src="../img/skele.png" alt="Chef Skellington"></a>
+        <div>
+          <a href="./home.html"><h1>Bone Apple Tea</h1></a>
+          <nav>
+            <a href="./home.html#about">About Us</a>
+            <span class="sep">-</span>
+            <a href="./menu.html">Menu</a>
+            <span class="sep">-</span>
+            <a href="./reserve.html">Reservations</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="rowbox nolax">
+      <h2 class="food nob">Make a Reservation</h2>
+      <p class="prompt">Select a Day</p>
+      <div class="calendar">
+        <h2 class="month">December</h2>
+        <div class="days">
+          <span class="label">S</span>
+          <span class="label">M</span>
+          <span class="label">T</span>
+          <span class="label">W</span>
+          <span class="label">T</span>
+          <span class="label">F</span>
+          <span class="label">S</span>
+          <span class="blank"></span>
+          <span class="blank"></span>
+          <span class="blank"></span>
+          <span class="blank"></span>
+          <button class="day" onclick="getDay(1)">1</button>
+          <button class="day" onclick="getDay(2)">2</button>
+          <button class="day" onclick="getDay(3)">3</button>
+          <button class="day" onclick="getDay(4)">4</button>
+          <button class="day" onclick="getDay(5)">5</button>
+          <button class="day" onclick="getDay(6)">6</button>
+          <button class="day" onclick="getDay(7)">7</button>
+          <button class="day" onclick="getDay(8)">8</button>
+          <button class="day" onclick="getDay(9)">9</button>
+          <button class="day" onclick="getDay(10)">10</button>
+          <button class="day" onclick="getDay(11)">11</button>
+          <button class="day" onclick="getDay(12)">12</button>
+          <button class="day" onclick="getDay(13)">13</button>
+          <button class="day" onclick="getDay(14)">14</button>
+          <button class="day" onclick="getDay(15)">15</button>
+          <button class="day" onclick="getDay(16)">16</button>
+          <button class="day" onclick="getDay(17)">17</button>
+          <button class="day" onclick="getDay(18)">18</button>
+          <button class="day" onclick="getDay(19)">19</button>
+          <button class="day" onclick="getDay(20)">20</button>
+          <button class="day" onclick="getDay(21)">21</button>
+          <button class="day" onclick="getDay(22)">22</button>
+          <button class="day" onclick="getDay(23)">23</button>
+          <button class="day" onclick="getDay(24)">24</button>
+          <button class="day" onclick="getDay(25)">25</button>
+          <button class="day" onclick="getDay(26)">26</button>
+          <button class="day" onclick="getDay(27)">27</button>
+          <button class="day" onclick="getDay(28)">28</button>
+          <button class="day" onclick="getDay(29)">29</button>
+          <button class="day" onclick="getDay(30)">30</button>
+          <button class="day" onclick="getDay(31)">31</button>
+        </div>
+      </div>
+      <div id="time">
+        <p class="prompt">Select a Time</p>
+        <form id="timeform">
+          <select id="hour">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+          </select>
+          :
+          <select id="minute">
+            <option value="00">00</option>
+            <option value="15">15</option>
+            <option value="30">30</option>
+            <option value="45">45</option>
+          </select>
+          pm
+        </form>
+        <button onclick="printTime()">Select</button>
+      </div>
+    </div>
+    <div id="greyout">
+      <div id="confirm">
+        <p id="output"><p>
+        <a href="./home.html">Submit</a>
+        <a id="cancel" href="./reserve.html">Cancel</a>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/reserve.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="Roy Gustafson">
-  <title></title>
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<header> <!-- appears on scroll -->
-  <a href="./home.html">
-    <img src="../img/skeleton.png" alt="Bone Apple Tea">
-    <h1>Bone Apple Tea</h1>
-  </a>
-  <nav>
-    <a href="#about"></a>
-    <a href="./menu.html"></a>
-    <a href="./reserve.html"></a>
-  </nav>
-</header>
-<body>
-  <!-- Carousel does not scroll -->
-  <div class="rows">
-    <div class="row">
-      <h2>November's Theme</h2>
-      <img>
-      <p></p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Roy Gustafson">
+    <title>Bone Apple Tea</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sahitya" rel="stylesheet">
+  </head>
+  <body>
+    <div class="parallax" style="background-image:url('../img/bg1.jpg')">
+      <div id="welcome">
+        <h1>Bone Apple Tea</h1>
+        <div id="welcomelinks">
+          <a href="#about">About Us</a>
+          <a href="./menu.html">Menu</a>
+          <a href="./reserve.html">Reservations</a>
+        </div>
+      </div>
     </div>
-    <div class="row reversed">
-      <h2>Our Goal</h2>
-      <img>
-      <p></p>
-    <div class="row">
-      <h2>About Us</h2>
-      <img>
-      <p></p>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/welcome.js"></script>
+    <span id="about"></span>
+    <header>
+      <div class="container">
+        <a href="./home.html"><img id="logo" src="../img/skele.png" alt="Chef Skellington"></a>
+        <div>
+          <a href="./home.html"><h1>Bone Apple Tea</h1></a>
+          <nav>
+            <a href="#about">About Us</a>
+            <span class="sep">-</span>
+            <a href="./menu.html">Menu</a>
+            <span class="sep">-</span>
+            <a href="./reserve.html">Reservations</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="rowbox">
+      <div class="row">
+        <h2>About Us</h2>
+        <p>Donec nec porttitor leo. Integer sodales feugiat varius. Maecenas lobortis tincidunt egestas. Vivamus aliquam quis est eu sagittis. In fermentum purus in congue laoreet. Suspendisse nec ex metus. Sed aliquet id mi eu interdum.</p>
+      </div>
+      <div class="row reversed">
+        <h2>Our Goal</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nisl elit, sagittis vitae porttitor vitae, lobortis a libero. Vestibulum sed turpis at massa iaculis ornare. Mauris porta non magna tristique.</p>
+      </div>
+      <div class="row">
+        <h2>This Month's Theme</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut interdum enim. Quisque tempus felis nec fringilla fermentum. Morbi blandit maximus enim, id rutrum est. Vivamus dictum, dolor at suscipit.</p>
+      </div>
+      <div class="row reversed">
+        <h2>History</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at augue tempus, suscipit augue ut, vehicula ex. Ut at lorem dolor. Class aptent taciti sociosqu ad litora torquent per conubia.</p>
+      </div>
     </div>
-  </div>
-</body>
-<footer>
-  <a href="">
-  <img src="./img/skeleton.png">
+    <footer>
+      <a href="mailto:rag94@pitt.edu" target="_top">Contact Us</a>
+      <img id="foot" src="../img/skele.png" alt="Chef Skellington">
+    </footer>
+  </body>
 </html>

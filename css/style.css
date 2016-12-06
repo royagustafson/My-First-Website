@@ -1,0 +1,261 @@
+body {
+  font: 12pt 'Sahitya', sans-serif;
+  margin:0;
+  overflow-x: hidden;
+}
+/* font */
+h1 {
+  font: 18pt 'Open Sans Condensed', sans-serif;
+  letter-spacing: 6px;
+  display: inline;
+  text-transform: uppercase;
+}
+h2 {
+  font: 16pt 'Open Sans Condensed', sans-serif;
+  letter-spacing: 2px;
+}
+p { font: 10pt 'Sahitya', serif; }
+
+/* links */
+a {
+  font: 14pt 'Open Sans Condensed', sans-serif;
+  letter-spacing: 4px;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  font-size: inherit;
+  text-decoration: none;
+  color: #63789B;
+}
+a:visited {color: #5C8268;}
+a:hover {color: #FCAF6C;}
+a:visited:hover{color: #FCAF6C;}
+
+/* header */
+.container {
+  width: 80%;
+  max-width: 700px;
+  min-width: 300px;
+  margin: auto;
+}
+header {
+  background-color: #BBCEC1;
+  padding: 30px 0 20px 0;
+}
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.nolax { padding-top: 80pt; }
+#logo {
+  height: 30pt;
+  margin: 4pt 20px 0 0;
+  filter: invert(100%);
+  float: left;
+}
+nav a {
+  font-size: 10pt;
+  letter-spacing: 1px;
+}
+
+/* rows */
+.rowbox {
+  width: 80%;
+  max-width: 600px;
+  min-width: 280px;
+  margin: auto;
+  text-align: center;
+}
+.row {
+  height: 250px;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  border-bottom: 1px solid;
+}
+.row h3 {
+  padding-top: 15px;
+}
+.row p {
+  width: auto;
+  margin-right: 15px;
+}
+.row img {
+  float: right;
+  height: 180px;
+  margin-top: 5%;
+  margin-left: 5%;
+  top: 50%;
+}
+.reversed { text-align: right; }
+.reversed p {
+  margin-left: auto;
+  margin-right: 0;
+}
+.reversed img {
+  float: left;
+  margin-right: 5%;
+}
+.food {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+.bottom { border-bottom: none; }
+
+/* forms and buttons */
+/* calendar */
+.calendar {
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 10px;
+  height: auto;
+  width: 300px;
+  margin: auto;
+}
+.month {
+  margin-top: 0;
+  font-size: 16pt;
+  border-bottom: 1px solid;
+}
+.days > * {
+  display: inline-block;
+  width: 13%;
+}
+.label {
+  font-size: 10pt;
+  margin-bottom: 10px;
+}
+.day {
+  height: 30px;
+  margin: 1px 0 1px 0;
+}
+.prompt {
+}
+.nob {
+  margin-bottom: 0;
+}
+button {
+  background-color: #BBCEC1;
+  border: none;
+  text-decoration: none;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #FCAF6C;
+}
+/* time */
+#time {
+  display: none;
+}
+
+/* confirmation */
+#greyout {
+  display: none;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba( 0, 0, 0, 0.25 );
+}
+#confirm {
+  position: absolute;
+  height: 100px;
+  width: 250px;
+  top: 50%;
+  left: 50%;
+  border: 1px solid;
+  border-radius: 2px;
+  padding: 10px;
+  margin-left: -135px;
+  margin-top: -50px;
+  background-color: rgba( 128, 128, 128, 0.9 );
+}
+#confirm a {
+  color: black;
+  border: 1px solid;
+  border-radius: 2px;
+  padding-left: 3px;
+  letter-spacing: 4px;
+}
+#confirm a:hover {
+  color: #FCAF6C;
+}
+#output {
+  font-size: 12pt;
+}
+#cancel {
+  margin-left: 46%;
+}
+/* contact footer w/ skeleton */
+footer {
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  padding: 10px 10px 10px 0;
+  text-align: center;
+}
+#foot {
+  display: block;
+  margin: auto;
+  height: 14pt;
+}
+
+/* welcome */
+
+/* Parallax */
+.parallax {
+
+  position: relative;
+
+  -webkit-transition: background-image 1s linear;
+  transition: background-image 1s linear;
+
+  height: 100vh;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Welcome Box */
+#welcome {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  top: 35%;
+  color: white;
+}
+
+#welcome > h1 {
+  display: block;
+  font-size: 30pt;
+  letter-spacing: 10px;
+}
+
+#welcome > h1 : hover {
+  cursor: default;
+}
+
+#welcomelinks {
+  margin-top: 20px;
+  font-size: 14pt;
+  background-color: rgba( 0, 0, 0, 0.25 );
+}
+#welcomelinks > a {
+  font-weight: bold;
+  color: white;
+
+  display: block;
+}
+
+#welcomelinks > a:hover {
+  color: #FCAF6C;
+}

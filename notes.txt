@@ -1,0 +1,22 @@
+Home
+
+Background Carousel
+  Middle data
+
+Parallax
+  Header appears on top
+
+Row
+  Images, Header, Description
+  100% Width. Fixed height. Image scales.
+
+Menu
+  Table
+  Food/Pricing/ Special (vegan, vegetarian, low cal)
+  Occasional pictures
+
+Calendar
+  31 buttons
+  Brings up time prompt
+  Submit
+  Confirmation page
